@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/widgets/category_card.dart';
 
 class NewsView extends StatelessWidget {
   const NewsView({super.key});
@@ -14,13 +15,19 @@ class NewsView extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
              Text("News", style: TextStyle(color: Colors.black),),
-             Text(" Cloud", style: TextStyle(color: Colors.orange),),
+            Text(
+              "Cloud",
+              style: TextStyle(color: Colors.orange),
+            ),
           ],
         ),
       ),
       body: const Column(
-        children: [],
+        children: [
+          CategoryCard(),
+        ],
       ),
     );
   }
 }
+
