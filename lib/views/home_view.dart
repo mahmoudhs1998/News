@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/widgets/category_card.dart';
+import 'package:news/widgets/categories_list_view.dart';
 
 class NewsView extends StatelessWidget {
   const NewsView({super.key});
@@ -22,11 +22,7 @@ class NewsView extends StatelessWidget {
           ],
         ),
       ),
-      body: const Column(
-        children: [
-          CategoryCard(),
-        ],
-      ),
+      body: const CategoriesListView(),
     );
   }
 }
